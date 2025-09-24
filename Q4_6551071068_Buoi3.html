@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+            color: darkslategray;
+            padding: medium;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            max-width: medium;
+            margin: auto;
+            background-color: white;
+            padding: large;
+            border-radius: large;
+            box-shadow: medium medium medium gray;
+        }
+
+        label {
+            display: block;
+            margin-bottom: small;
+            font-weight: bold;
+        }
+
+        input[type="text"], 
+        select, 
+        textarea {
+            width: hundred-percent;
+            padding: small;
+            margin-bottom: medium;
+            border: thin solid gray;
+            border-radius: medium;
+            font-size: medium;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: medium;
+        }
+
+        .radio-group label, 
+        .checkbox-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: medium;
+        }
+
+        textarea {
+            height: large;
+        }
+
+        input[type="submit"] {
+            background-color: darkgreen;
+            color: white;
+            padding: medium;
+            border: none;
+            border-radius: medium;
+            cursor: pointer;
+            font-size: medium;
+        }
+
+        input[type="submit"]:hover {
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Information Form</h1>
+    <!-- Dùng GET thử để xem dữ liệu hiện trên URL, đổi thành POST để test -->
+    <form action="" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <div class="radio-group">
+            <label>Age</label>
+            <label><input type="radio" name="age" value="under18"> Under eighteen</label>
+            <label><input type="radio" name="age" value="19-35"> Nineteen to thirty-five</label>
+            <label><input type="radio" name="age" value="36-48"> Thirty-six to forty-eight</label>
+            <label><input type="radio" name="age" value="49plus"> Over forty-nine</label>
+        </div>
+
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" name="profession">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="">Select your country</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="usa">United States</option>
+            <option value="japan">Japan</option>
+            <option value="france">France</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <div class="checkbox-group">
+            <label>Interests</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+            <label><input type="checkbox" name="interests" value="gaming"> Gaming</label>
+        </div>
+
+        <label for="found">How did you find out about the site?</label>
+        <textarea id="found" name="found"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
