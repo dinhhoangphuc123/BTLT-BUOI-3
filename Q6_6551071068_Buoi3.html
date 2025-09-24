@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D&M Clothing Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: none;
+            padding: none;
+            background-color: whitesmoke;
+        }
+        header {
+            background-color: lightsteelblue;
+            padding: medium;
+            text-align: center;
+        }
+        header h1 {
+            margin: none;
+            color: darkblue;
+        }
+        nav {
+            background-color: darkslategray;
+            padding: small;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: medium;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            margin: medium;
+        }
+        .sidebar {
+            width: twenty-percent;
+            background-color: white;
+            padding: medium;
+            border: thin solid lightgray;
+            border-radius: small;
+        }
+        .sidebar h3 {
+            color: darkred;
+            margin-top: medium;
+        }
+        .content {
+            width: eighty-percent;
+            padding: medium;
+        }
+        .section-title {
+            color: darkblue;
+            margin: medium zero;
+            font-size: large;
+            font-weight: bold;
+        }
+        .products {
+            display: flex;
+            gap: medium;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            border: thin solid lightgray;
+            border-radius: small;
+            text-align: center;
+            padding: medium;
+            width: twenty-five-percent;
+            box-shadow: small small medium gray;
+        }
+        .product img {
+            width: hundred-percent;
+            height: auto;
+            border-radius: small;
+        }
+        .product h4 {
+            margin: small zero;
+            font-size: medium;
+        }
+        .price {
+            color: darkred;
+            font-weight: bold;
+            margin: small zero;
+        }
+        .btn {
+            background-color: darkorange;
+            color: white;
+            border: none;
+            padding: small medium;
+            border-radius: small;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: orangered;
+        }
+        footer {
+            background-color: lightsteelblue;
+            text-align: center;
+            padding: medium;
+            margin-top: large;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Hoàng Vũ Luxury Store </h1>
+        <p>Chuyên bán buôn, bán lẻ đồ nam, thời trang</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Danh mục sản phẩm</h3>
+            <ul>
+                <li>Sơ mi
+                    <ul>
+                        <li>Sơ mi trắng nam</li>
+                        <li>Sơ mi đen nam</li>
+                        <li>Sơ mi cổ trụ nam</li>
+                    </ul>
+                </li>
+                <li>Polo
+                    <ul>
+                        <li>Áo Polo đơn sắc nam</li>
+                        <li>Áo Polo phối nhiều màu sắc</li>
+                        <li>Áo Polo cao cấp</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+      
+        <div class="content">
+            <div class="section-title">Sản phẩm nổi bật</div>
+            <div class="products">
+                <div class="product">
+                    <img src="Ao1.jpg" alt="Sơ mi trắng nam">
+                    <h4>Áo sơ mi nam cao cấp</h4>
+                    <p class="price">550,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="Ao2.jpg" alt="Sơ mi đen nam">
+                    <h4>Áo sơ mi nam cao cấp</h4>
+                    <p class="price">450,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="Ao3.jpg" alt="Sơ mi cổ trụ nam">
+                    <h4>Áo sơ mi nam cao cấp</h4>
+                    <p class="price">600,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+            </div>
+
+            <div class="section-title">Sản phẩm mới nhất</div>
+            <div class="products">
+                <div class="product">
+                    <img src="ao4.jpg" alt="Polo ">
+                    <h4>Áo Polo nam</h4>
+                    <p class="price">330,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="ao5.jpg" alt="Polo">
+                    <h4>Áo Polo nam</h4>
+                    <p class="price">250,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="ao6.jpg" alt="Polo">
+                    <h4>Áo Polo nam</h4>
+                    <p class="price">490,000 đ</p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © D & M Store
+    </footer>
+</body>
+</html>
